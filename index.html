@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abu Ubaida - Portfolio</title>
+    <meta
+      name="description"
+      content="Abu Ubaida is a Full-Stack Developer and DSA enthusiast based in Kushtia, Bangladesh. 
+      View his portfolio, skills, projects, blogs, and more."
+    />
+    <meta
+      name="keywords"
+      content="Abu Ubaida, Abu Ubaida tech, Abu Ubaida NotesNeo, Abu Ubaida vercel, 
+      Abu Ubaida io, Abu Ubaida me, Abu Ubaida MDU, Abu Ubaida SAITM, Full-Stack Developer, 
+      DSA enthusiast, Kushtia Developer, Portfolio, Web Developer, JavaScript, React, Node.js"
+    />
+    <meta name="author" content="Abu Ubaida" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://abuubaida.tech/" />
+    <meta
+      name="google-site-verification"
+      content="vvp2OYjF6CFibJc7x2WTbT-4fWFHe6Ue5hYXcaq_LjE"
+    />
+    <link rel="icon" type="image/png" href="./assets/ui/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        const storedTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if ((storedTheme && storedTheme === "dark") || (!storedTheme && prefersDark)) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div id="page-loader" class="loader-overlay">
+      <div class="loader-mark">
+        <span class="loader-mark__line"></span>
+        <span class="loader-mark__text">Abu Ubaida</span>
+        <span class="loader-mark__glow"></span>
+      </div>
+    </div>
+
+    <nav id="site-nav" class="site-nav">
+      <div class="site-nav__inner">
+        <button id="logo-trigger" class="logo-button" type="button" aria-label="Show loader">
+          <img src="./assets/ui/logo.png" alt="Logo" class="logo-button__image" />
+        </button>
+
+        <div id="desktop-nav" class="desktop-nav"></div>
+
+        <div class="site-nav__actions">
+          <a
+            href="https://github.com/ubaida01"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="github-pill"
+          >
+            <span class="github-pill__icon" aria-hidden="true"></span>
+            <span>GitHub</span>
+          </a>
+
+          <button id="theme-toggle" class="icon-toggle" type="button" aria-label="Toggle theme">
+            <span class="icon-toggle__glyph icon-toggle__glyph--sun"></span>
+            <span class="icon-toggle__glyph icon-toggle__glyph--moon"></span>
+          </button>
+
+          <button
+            id="menu-toggle"
+            class="menu-toggle"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-nav" class="mobile-nav"></div>
+    </nav>
+
+    <main class="site-shell">
+      <section id="home" class="hero">
+        <div class="hero__backdrop">
+          <div class="hero__grid-pattern"></div>
+          <div class="hero__blob hero__blob--one"></div>
+          <div class="hero__blob hero__blob--two"></div>
+        </div>
+
+        <div class="hero__container">
+          <div class="hero__content reveal reveal--visible">
+            <div class="hero__copy">
+              <div class="hero__eyebrow">
+                <span>Hey!</span>
+                <span class="hero__wave">👋</span>
+                <span>I'm</span>
+              </div>
+              <h1 class="hero__title">Abu Ubaida</h1>
+              <p class="hero__role">
+                I'm a
+                <span id="typing-text" class="hero__role-accent"></span>
+              </p>
+              <p class="hero__summary">
+                I am a undergrade student in ICT major, currently pursuing the degree from Islamic University, Kushtia.
+                I keep interest in Machine Learning and Data Science. Also I love to participate in Hackathons and Datathons on a regular basis.
+              </p>
+
+              <div class="hero__cta-row">
+                <a
+                  href="https://drive.google.com/file/d/1BmPTMsZ9WujDpS4xa9JOkT7rQo56wDfF/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="button button--primary"
+                >
+                  View Resume
+                </a>
+                <a href="#contact" class="button button--secondary">Contact Me</a>
+              </div>
+
+              <div id="social-links-hero" class="social-links social-links--hero"></div>
+            </div>
+
+            <div class="hero__media">
+              <div class="hero__orb hero__orb--main"></div>
+              <div class="hero__orb hero__orb--pink"></div>
+              <div class="hero__orb hero__orb--purple"></div>
+              <div class="hero__portrait-shell">
+                <img
+                  src="./assets/ui/profile.jpg"
+                  alt="Abu Ubaida"
+                  class="hero__portrait"
+                />
+              </div>
+            </div>
+          </div>
+
+          <a href="#about" class="hero__scroll-hint" aria-label="Scroll to About section">
+            <span></span>
+          </a>
+        </div>
+      </section>
+
+      <section id="about" class="section-shell">
+        <div class="section-shell__inner">
+          <div class="section-heading reveal">
+            <h2>About Me</h2>
+            <p>
+              A self-motivated problem solver with a passion for creating beautiful, functional, and accessible digital experiences.
+              I love to think, and develop projects that can help people in their daily lives.
+            </p>
+            <div class="section-heading__decor" aria-hidden="true"></div>
+          </div>
+
+          <div class="about-copy reveal">
+            <p>
+              Hello! 👋 I'm <strong>Abu Ubaida</strong>, a B.Sc. Engineering student in ICT at
+              Islamic University. I started my Machine Learning journey out of curiosity, and now I
+              truly enjoy playing with data. I'm passionate about learning
+              and growing every day as a Machine Learning Engineer.
+            </p>
+            <span class="about-copy__badge"
+              >🚀 Turning curiosity into code and code into real-world solutions</span
+            >
+          </div>
+
+          <div id="about-grid" class="about-grid"></div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-shell">
+        <div class="section-shell__inner">
+          <div class="section-heading reveal">
+            <h2>Skills</h2>
+            <p>The tech stack I've been collecting like Pokémon cards - gotta catch 'em all! 🎯</p>
+            <div class="section-heading__decor" aria-hidden="true"></div>
+          </div>
+
+          <div id="skills-grid" class="skills-grid"></div>
+        </div>
+      </section>
+
+      <section id="experience" class="section-shell">
+        <div class="section-shell__inner">
+          <div class="section-heading reveal">
+            <h2>Experience</h2>
+            <p>My journey as a passionate problem solver and ML Engineering enthusiast</p>
+            <div class="section-heading__decor" aria-hidden="true"></div>
+          </div>
+
+          <div id="experience-list" class="experience-timeline"></div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-shell">
+        <div class="section-shell__inner">
+          <div class="section-heading reveal">
+            <h2>Projects</h2>
+            <p>My projects - they're not perfect, but they're mine and I love them</p>
+            <div class="section-heading__decor" aria-hidden="true"></div>
+          </div>
+
+          <div id="projects-grid" class="projects-grid"></div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section-shell">
+        <div class="section-shell__inner">
+          <div class="section-heading reveal">
+            <h2>Certifications</h2>
+            <p>Some courses I actually completed instead of just bookmarking them - fancy certificates!</p>
+            <div class="section-heading__decor" aria-hidden="true"></div>
+          </div>
+
+          <div id="certifications-carousel" class="certifications-carousel reveal">
+            <div id="cert-track" class="certifications-carousel__track"></div>
+            <div id="cert-dots" class="certifications-carousel__dots"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section-shell">
+        <div class="section-shell__inner">
+          <div class="section-heading reveal">
+            <h2>Education</h2>
+            <p>Where I learned theory and then forgot half of it while learning to actually code 😅</p>
+            <div class="section-heading__decor" aria-hidden="true"></div>
+          </div>
+
+          <div id="education-list" class="education-list"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-shell">
+        <div class="section-shell__inner">
+          <div class="section-heading reveal">
+            <h2>Get In Touch</h2>
+            <p>
+              Got a cool project idea? Want to collaborate? Or just want to say hi? Drop me a line!
+            </p>
+            <div class="section-heading__decor" aria-hidden="true"></div>
+          </div>
+
+          <div class="contact-layout">
+            <article class="contact-card contact-card--copy reveal">
+              <h3>Let's Connect</h3>
+              <p>
+                Whether you've got a crazy project idea, want to collaborate on something awesome, or
+                just want to chat about tech over coffee ☕ - I'm all ears! And yes, this actually goes
+                straight to my inbox, not some random void like other contact forms.
+              </p>
+              <div id="contact-links" class="contact-links"></div>
+            </article>
+
+            <article class="contact-card reveal">
+              <form id="contact-form" class="contact-form">
+                <label class="field">
+                  <span>Name</span>
+                  <input id="name" name="name" type="text" placeholder="Enter your name" required />
+                </label>
+                <label class="field">
+                  <span>Email</span>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </label>
+                <label class="field">
+                  <span>Message</span>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </label>
+                <button id="submit-button" type="submit" class="button button--primary button--full">
+                  Send Message
+                </button>
+                <p id="form-status" class="form-status" aria-live="polite"></p>
+              </form>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <nav id="footer-nav" class="footer-nav"></nav>
+        <div id="social-links-footer" class="social-links social-links--footer"></div>
+        <p class="site-footer__copy">© <span id="footer-year"></span> Abu Ubaida. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button id="scroll-top" class="scroll-top" type="button" aria-label="Scroll to top">
+      <svg viewBox="0 0 48 48" class="scroll-top__ring" aria-hidden="true">
+        <circle cx="24" cy="24" r="20"></circle>
+        <circle id="scroll-progress" cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span class="scroll-top__arrow">↑</span>
+      <span class="scroll-top__label">Scroll to top</span>
+    </button>
+  </body>
+</html>
