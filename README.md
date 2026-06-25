@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 # Portfolio of Abu Ubaida
 
 A responsive personal portfolio website built with plain HTML, CSS, and JavaScript.
 
+=======
+# Portfolio Clone
+
+A responsive personal portfolio website built with plain HTML, CSS, and JavaScript.
+
+This project recreates the visual structure of the reference portfolio and keeps the content easy to update from a single place.
+
+>>>>>>> 89b2446 (some little corrections)
 ## Features
 
 - Responsive single-page portfolio layout
