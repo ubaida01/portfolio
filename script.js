@@ -20,10 +20,10 @@ const portfolioData = {
     { href: "#contact", label: "Contact" },
   ],
   typingWords: [
-    "ICT Engineering Student",
-    "Journalist",
-    "ML Enthusiast",
-    "Problem Solver",
+    "an ICT Engineering Student",
+    "a Journalist",
+    "an ML Enthusiast",
+    "a Problem Solver",
   ],
   socials: [
     {
