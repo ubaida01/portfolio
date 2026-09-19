@@ -1,16 +1,9 @@
-<<<<<<< HEAD
+
 # Portfolio of Abu Ubaida
 
 A responsive personal portfolio website built with plain HTML, CSS, and JavaScript.
 
-=======
-# Portfolio Clone
 
-A responsive personal portfolio website built with plain HTML, CSS, and JavaScript.
-
-This project recreates the visual structure of the reference portfolio and keeps the content easy to update from a single place.
-
->>>>>>> 89b2446 (some little corrections)
 ## Features
 
 - Responsive single-page portfolio layout
@@ -42,39 +35,6 @@ This project recreates the visual structure of the reference portfolio and keeps
 └── README.md
 ```
 
-## Run Locally
-
-Because this is a static site, you can open `index.html` directly or use a simple local server.
-
-Example with Python:
-
-```bash
-python3 -m http.server 4173
-```
-
-Then open:
-
-```text
-http://localhost:4173
-```
-
-## Customize Content
-
-Most editable content is stored in the `portfolioData` object near the top of [script.js](./script.js).
-
-You can update:
-
-- Navigation links
-- Hero text
-- About cards
-- Skills
-- Projects
-- Experience
-- Certifications
-- Education
-- Contact links
-- Formspree endpoint
-
 ## Customize Styling
 
 Main styles are in [styles.css](./styles.css).
@@ -88,18 +48,10 @@ You can easily change:
 - Section backgrounds
 - Animations
 
-## Deployment
-
-You can deploy this project on any static hosting platform, including:
-
-- Vercel
-- Netlify
-- GitHub Pages
-
 ## Notes
 
 - Images are stored locally in `assets/` for easier editing and portability.
-- The contact form currently posts to Formspree. Replace the endpoint in `script.js` if you want to use your own form handler.
+- The contact form currently posts to Formspree.
 
 ## License
 
